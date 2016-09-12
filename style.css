@@ -50,10 +50,12 @@ nav>span:hover{
 
 div#footer{
 	margin: 0px auto;
-	vertical-align: middle;
 	width:70%;
 	height: 2em;
 	border-radius: 5px;
 	border-style: ridge;
 	box-shadow:rgba(0,0,0,0.2) 4px 4px 16px 0px;
+}
+div#footer>p{
+	vertical-align: middle;
 }
