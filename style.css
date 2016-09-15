@@ -5,6 +5,7 @@ html, body{
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	--nav-bar-color:rgb(0,90,150);
 }
 
 body{
@@ -14,7 +15,9 @@ body{
 	font-family:Verdana, Geneva, sans-serif;
 	padding-top: 60px;
 }
-
+div#content{
+	min-height: 500px;
+}
 h1{
 
 	display: block;
@@ -25,37 +28,77 @@ nav{
 	width: 100%;
 	top: 0;
 	position: fixed;
-	background-color:rgb(0,90,150);
+	background-color:var(--nav-bar-color);
+	/*rgb(0,90,150);*/
 	box-shadow: rgba(0,0,0,0.2) 0px 8px 16px 0px;
+	text-align: left;
+	max-height: 2.2em;
 }
 
 nav>span{
 	display: inline-block;
 	vertical-align: top;
-	/*margin: 0.5em;*/
-	background-color:rgb(0,90,150);
-	float:left;
-	max-height: 50px;
+	background-color:var(--nav-bar-color);
+	/*rgb(0,90,150);*/
+	/*float:left;*/
+	max-height: 2.2em;
+	overflow: hidden;
+	font-size: 1em;
+
 }
 nav a{
 	display: block;
 	color: white;
-	margin: 0.5em;
 	text-decoration: none;
+	margin: 0.5em;
 
 }
-nav>span:hover{
+.dropdown {
+	transition: background-color 0.5s, max-height 0.5s, margin-bottom 0.5s, box-shadow 0.5s;
+}
+/*nav>span:hover{
 	background-color:rgb(0,50,50);
+}*/
+.dropdown:hover{
+	background-color:rgb(0,50,50);
+	max-height: 20em;
+	margin-bottom: -5em;
+	box-shadow: rgba(0,0,0,0.2) 4px 4px 16px 0px;
 }
 
 div#footer{
-	margin: 0px auto;
-	width:70%;
-	height: 2em;
-	border-radius: 5px;
-	border-style: ridge;
-	box-shadow:rgba(0,0,0,0.2) 4px 4px 16px 0px;
+	padding: 1em;
+	min-height: 8em;
+	color: white;
+	background: var(--nav-bar-color);
+	
 }
-div#footer>p{
-	vertical-align: middle;
+div#footer>span{
+	display: inline-block;
+}
+
+div#footer a{
+	text-decoration: none;
+	color: inherit;
+}
+div#footer a:hover{
+	color: gray;
+}
+div#footer>ul{
+	list-style-type: none;
+	display: inline-block;
+	text-align: left;
+}
+
+.left-align{
+    margin: 0;
+    margin-left: 20px;
+	float: left;
+}
+.right-align{
+	margin-right: 20px;
+	vertical-align: top;
+	text-align: right;
+	float: right;
+
 }

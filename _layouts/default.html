@@ -9,17 +9,50 @@
 </head>
 <body>
 	<nav>
-		<span id="home"><a href="index.html">Home</a></span>
-		<span><a href="contact.html">Contact</a></span>
-		<span><a href="research.html">Research</a></span>
-		<span><a href="personnel.html">Lab Personnel</a></span>
+		<span id="home" class="dropdown">
+			<a href="index.html">Home</a>
+		</span>
+		<span class="dropdown"><a href="contact.html">Contact</a></span>
+		<span class="dropdown">
+			<a href="research.html">Research</a>
+			<a href="#">Research</a>
+			<a href="#">Research</a>
+			<a href="#">Research</a>
+		</span>
+		<span class="dropdown">
+			<a href="personnel.html">Lab Personnel</a>
+			<a href="#">Person</a>
+			<a href="#">Person</a>
+			<a href="#">Person</a>
+			<a href="#">Person</a>
+			<a href="#">Person</a>
+		</span>
 	</nav>
 
 	<h1>{{ page.title }}</h1>
-		
-	{{ content }}
+	<div id="content">
+		{{ content }}
+	</div>
+	
 	<div id="footer">
-		<p>&copy; 2016 Wendy Trzyna</p>
+		
+		
+		<ul class="left-align">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="personnel.html">Lab Personnel</a></li>
+		</ul>
+		
+		<span class="right-align">
+			<p>ADDRESS</p>
+			<p>CONTACT INFO</p>
+		</span>
+		<span>
+			<p>&copy; 2016 Wendy Trzyna</p>
+		</span>
+		
+		
 	</div>
 </body>
 </html>
