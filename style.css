@@ -5,7 +5,7 @@ html, body{
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	--nav-bar-color:rgb(0,90,150);
+	/*--nav-bar-color:rgb(0,90,150);*/
 }
 
 body{
@@ -28,7 +28,7 @@ nav{
 	width: 100%;
 	top: 0;
 	position: fixed;
-	background-color:var(--nav-bar-color);
+	background-color:rgb(0,90,150);
 	/*rgb(0,90,150);*/
 	box-shadow: rgba(0,0,0,0.2) 0px 8px 16px 0px;
 	text-align: left;
@@ -38,7 +38,7 @@ nav{
 nav>span{
 	display: inline-block;
 	vertical-align: top;
-	background-color:var(--nav-bar-color);
+	background-color:rgb(0,90,150);
 	/*rgb(0,90,150);*/
 	/*float:left;*/
 	max-height: 2.2em;
@@ -70,7 +70,7 @@ div#footer{
 	padding: 1em;
 	min-height: 8em;
 	color: white;
-	background: var(--nav-bar-color);
+	background: rgb(0,90,150);
 	
 }
 div#footer>span{
