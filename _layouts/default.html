@@ -8,30 +8,42 @@
 
 </head>
 <body>
+	<div id="header">
+		<h2>Wendy Trzyna</h2>
+		<p>Associate Professor</p>
+	</div>
 	<nav>
 		<span id="home" class="dropdown">
 			<a href="index.html">Home</a>
 		</span>
-		<span class="dropdown"><a href="contact.html">Contact</a></span>
-		<span class="dropdown">
-			<a href="research.html">Research</a>
-			<a href="#">Research</a>
-			<a href="#">Research</a>
-			<a href="#">Research</a>
-		</span>
+		<span class="dropdown"><a href="teaching.html">Teaching</a></span>
 		<span class="dropdown">
 			<a href="personnel.html">Lab Personnel</a>
+			<hr style="width:90%;">
 			<a href="#">Person</a>
 			<a href="#">Person</a>
 			<a href="#">Person</a>
 			<a href="#">Person</a>
 			<a href="#">Person</a>
 		</span>
+		<span class="dropdown">
+			<a href="research.html">Research</a>
+			<hr style="width:90%;">
+			<a href="presentations.html">Presentations</a>
+			<a href="acanthamoeba.html">Acanthamoeba</a>
+			<a href="protocols.html">Protocols</a>
+		</span>
+		<span class="dropdown"><a href="contact.html">Contact</a></span>
+		
+		
 	</nav>
 
-	<h1>{{ page.title }}</h1>
+	<div id="title">
+		<h1>{{ page.title }}</h1>
+	</div>
+	
 	<div id="content">
-		{{ content }}
+		<p>{{ content }}</p>
 	</div>
 	
 	<div id="footer">
@@ -49,7 +61,7 @@
 			<p>CONTACT INFO</p>
 		</span>
 		<span>
-			<p>&copy; 2016 Wendy Trzyna</p>
+			<p>&copy; 2017 Wendy Trzyna</p>
 		</span>
 		
 		
