@@ -45,6 +45,7 @@ div#header>div>h2{
 	/*padding:			2% 0% 0% 2%;*/
 }
 div#header>div>p{
+	font-style: 		italic;
 	/*padding:				0% 0% 2% 2%;*/
 }
 div#title{
@@ -55,6 +56,10 @@ div#title{
 	border: 			2px solid black;
 	float: 				right;
 	background-color: 	rgb(192,192,192);
+}
+#right-pane-title{
+	font-size:			1.2em;
+	margin: 			5px auto;
 }
 div#content{
 	width:				75%;
@@ -96,7 +101,7 @@ nav a{
 
 }
 .dropdown {
-	transition: background-color 0.1s, box-shadow 0.1s;
+	transition: background-color 0.1s, box-shadow 0.0s;
 /*, max-height 0.5s, margin-bottom 0.5s*/
 }
 
