@@ -11,35 +11,56 @@ body{
 	margin:				0 auto;
 	color:				black;
 	background-color: 	white;
-	text-align: 		center;
+	text-align: 		left;
 	font-family:		Verdana, Geneva, sans-serif;
 	padding-top: 		20px;
+	/*vertical-align: 	top;*/
 }
 div#header{
+	display: 			inline-block;
 	width: 				100%;
+	height: 			6em;
 	margin:				0px auto;
+	padding: 			0.5em;
 	background-color: 	rgb(4, 149, 74);
-	border-radius: 		10px;
+	border-radius: 		0px;
 	text-align: 		left;
 	color:				white;
+	text-align: 		center;
 }
-div#header>h2{
-	padding:			2% 0% 0% 2%;
+#center-pane{
+	display: 			inline-block;
+	float: 				left;
+	width: 				75%;
+	margin: 			0px auto;
 }
-div#header>p{
-	padding:				0% 0% 2% 2%;
+#right-pane{
+	display: 			block;
+	float: 				right;
+	width: 				20%;
+	margin: 			0px auto;
+	padding: 			0.5em;
+}
+div#header>div>h2{
+	/*padding:			2% 0% 0% 2%;*/
+}
+div#header>div>p{
+	/*padding:				0% 0% 2% 2%;*/
 }
 div#title{
-	width: 				100%;
+	width: 				75%;
+	display: 			inline-block;
 	margin:				20px auto;
 	text-align: 		left;
 	border: 			2px solid black;
+	float: 				right;
 	background-color: 	rgb(192,192,192);
 }
 div#content{
-	width:		100%;
-	padding:	20px 0px;
-	min-height: 500px;
+	width:				75%;
+	float: 				right;
+	padding:			20px 0px;
+	min-height: 		500px;
 }
 h1{
 	margin: 		1% 5%;
@@ -48,22 +69,24 @@ h1{
 }
 
 nav{
-	width: 				100%;
-	margin:				0px auto;
+	display: 			inline-block;
+	width: 				20%;
+	margin:				20px auto;
 	background-color:	white;
-	text-align: 		center;
-	max-height: 		2.2em;
+	text-align: 		left;
+	float: 				left;
+	/*max-height: 		2.2em;*/
 }
 
 nav>span{
-	display: 				inline-block;
+	display: 				block;
 	vertical-align: 		top;
 	background-color:		white;
 	max-height: 			2.2em;
 	overflow: 				hidden;
 	font-size: 				1em;
 	border-radius: 			5px;
-	margin: 				0em 0.5em;
+	margin: 				0.5em 0.5em;
 
 }
 nav a{
@@ -74,17 +97,20 @@ nav a{
 
 }
 .dropdown {
-	transition: background-color 0.5s, max-height 0.5s, margin-bottom 0.5s, box-shadow 0.5s;
+	transition: background-color 0.1s, box-shadow 0.1s;
+/*, max-height 0.5s, margin-bottom 0.5s*/
 }
 
 .dropdown:hover{
 	background-color:	white;
-	max-height: 20em;
-	margin-bottom: -5em;
-	box-shadow: rgba(0,0,0,0.3) 4px 4px 16px 0px;
+	/*max-height: 20em;
+	margin-bottom: -5em;*/
+	box-shadow: rgba(0,0,0,0.3) 2px 2px 8px 0px;
 }
 
 div#footer{
+	position: 			fixed;
+	bottom: 			0;
 	width:				100%;
 	margin: 			0px auto;
 	padding: 			1em;
