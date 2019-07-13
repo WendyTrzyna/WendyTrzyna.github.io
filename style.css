@@ -80,7 +80,7 @@ nav{
 	display: 			inline-block;
 	width: 				20%;
 	margin:				20px auto;
-	background-color:	rgb(230, 254, 205);
+	background-color:	rgb(242, 242, 242);
 	text-align: 		left;
 	float: 				left;
 	/*max-height: 		2.2em;*/
@@ -89,7 +89,7 @@ nav{
 nav>span{
 	display: 				block;
 	vertical-align: 		top;
-	background-color:		rgb(230, 254, 205);
+	background-color:		rgb(242, 242, 242);
 	overflow: 				hidden;
 	font-size: 				1em;
 	border-radius: 			5px;
