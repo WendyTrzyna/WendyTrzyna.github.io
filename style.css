@@ -6,7 +6,7 @@ html, body{
 }
 
 body{
-	width:				60%;
+	width:				75%;
 	height: 			100%;
 	margin:				0 auto;
 	color:				black;
@@ -154,4 +154,38 @@ div#footer>ul{
 	text-align: right;
 	float: right;
 
+}
+
+#tile{
+	display 		: inline-block;
+	margin 			: 1.5em 2% 0px 2%;
+	width 			: 28%;
+	vertical-align 	: top;
+}
+#tile > img{
+	margin 		: 0px 0px 0px 0px;
+	width 		: 100%;
+}
+#tile > span {
+	display 	: block;
+	width 		: 94%;
+	margin 		: 0.2em auto;
+	text-align 	: center;
+} 
+#tile:hover{
+	color 		: #444444;
+}
+
+span#post-title{
+	/*font : style weight  font-size/line-spacing  font-family ,  generic-family ;  */
+	font 		: normal bold 1.2em Verdana, sans-serif;
+}
+
+a#tile-link{
+	color 			: black;
+	text-decoration : none;
+}
+
+a:visited#tile-link{
+	color 			: black;
 }

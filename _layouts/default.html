@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<base href="{{ site.url }}">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta charset="UTF-8">
-	<title>Dr. Wendy Trzyna - {{ page.title }}</title>
-	
-	<link rel="icon" type="image/ico" href="icons/amoeba_wv.ico">
-</head>
+
+{% include default-head.html %}
+
 <body>
 	<div id="center-pane">
 		<div id="header">
@@ -18,25 +13,13 @@
 			<img src="imgs/amoeba_wv.jpg" style="height:100%;float:right;">
 		</div>
 
-		<nav>
-			<span id="home" class="dropdown">
-				<a href="index.html">Home</a>
-			</span>
-			<span class="dropdown"><a href="teaching.html">Teaching</a></span>
-			<span class="dropdown"><a href="research.html">Research</a></span>
-			<span class="dropdown"><a href="personnel.html">Lab Personnel</a></span>
-			<span class="dropdown"><a href="lab_news.html">Lab News</a></span>
-			<span class="dropdown"><a href="publications.html">Publications</a></span>
-			<span class="dropdown"><a href="contact.html">Contact</a></span>
-			<span class="dropdown"><a href="links.html">Links</a></span>
-		</nav>
-
+		{% include default-nav.html %}
 		
 		<div id="content">
 			
 			<h2>{{ page.title }}</h2>
 	
-			<p>{{ content }}</p>
+			{{ content }}
 		</div>
 	</div>
 
